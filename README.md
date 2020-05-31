@@ -494,7 +494,7 @@ the implementation and using examples of object detection usages like, IoU, NMS,
    
    
    
-5. *AP、MAP**
+5. **AP、MAP**
 
    Blog:https://zhuanlan.zhihu.com/p/48992451
    
