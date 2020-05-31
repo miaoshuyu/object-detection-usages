@@ -3,7 +3,7 @@ the implementation and using examples of object detection usages like, IoU, NMS,
 
 
 
-1. **IOU的概念**
+1. **IoU**
 
    Blog: [https://zhuanlan.zhihu.com/p/47189358](https://zhuanlan.zhihu.com/p/47189358)
 
@@ -150,7 +150,7 @@ the implementation and using examples of object detection usages like, IoU, NMS,
 
    
 
-3. **目标检测回归损失的演变：SmoothL1/IoU/GIoU/DIoU/CIoU Loss**
+3. **The regression loss of object detection：SmoothL1/IoU/GIoU/DIoU/CIoU Loss**
 
    Blog: https://blog.csdn.net/yang_daxia/article/details/91360606
 
@@ -387,7 +387,7 @@ the implementation and using examples of object detection usages like, IoU, NMS,
 
    
 
-4. **目标检测分类损失的演变:cross-entropy/focal-loss/GHM**
+4. **The classification loss of object detection:cross-entropy/focal-loss/GHM**
 
    Blog:https://blog.csdn.net/qq_22210253/article/details/85229988 (cross-entropy)
    
@@ -494,7 +494,7 @@ the implementation and using examples of object detection usages like, IoU, NMS,
    
    
    
-5. **目标检测AP、MAP**
+5. *AP、MAP**
 
    Blog:https://zhuanlan.zhihu.com/p/48992451
    
