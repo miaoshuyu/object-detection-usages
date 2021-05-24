@@ -33,8 +33,8 @@ def nms(dets, thres):
         i = order[0]
         keep.append(i)
         xx1 = np.maximum(x1[i], x1[order[1:]])
-        xx2 = np.maximum(x2[i], x2[order[1:]])
-        yy1 = np.minimum(y1[i], y1[order[1:]])
+        xx2 = np.minimum(x2[i], x2[order[1:]])
+        yy1 = np.maximum(y1[i], y1[order[1:]])
         yy2 = np.minimum(y2[i], y2[order[1:]])
 
         w = np.maximum(xx2 - xx1 + 1.0, 0.0)
@@ -92,9 +92,9 @@ def soft_nms(dets, iou_thresh=0.3, sigma=0.5, thresh=0.001, method=2):
             areas[maxpos + i + 1] = temp_area
 
         xx1 = np.maximum(x1[i], x1[pos:])
-        xx2 = np.maximum(x2[i], x2[pos:])
+        xx2 = np.minimum(x2[i], x2[pos:])
         yy1 = np.maximum(y1[i], y1[pos:])
-        yy2 = np.maximum(y2[i], y2[pos:])
+        yy2 = np.minimum(y2[i], y2[pos:])
 
         w = np.maximum(xx2 - xx1 + 1.0, 0.)
         h = np.maximum(yy2 - yy1 + 1.0, 0.)
