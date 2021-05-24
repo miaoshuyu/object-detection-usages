@@ -61,7 +61,7 @@ the implementation and using examples of object detection usages like, IoU, NMS,
            keep.append(i)
            xx1 = np.maximum(x1[i], x1[order[1:]])
            xx2 = np.maximum(x2[i], x2[order[1:]])
-           yy1 = np.maximum(y1[i], y1[order[1:]])
+           yy1 = np.minimum(y1[i], y1[order[1:]])
            yy2 = np.minimum(y2[i], y2[order[1:]])
    
            w = np.maximum(xx2 - xx1 + 1.0, 0.0)
